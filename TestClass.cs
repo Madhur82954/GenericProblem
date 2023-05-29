@@ -6,7 +6,7 @@ namespace GenericProblem
 {
     internal class TestClass
     {
-        public string StringCompare(string first, string second, string third)
+        public T Compareall<T>(T first, T second, T third) where T : IComparable
         {
             if (first.CompareTo(second) > 0 && first.CompareTo(third) > 0)
             {
@@ -20,7 +20,7 @@ namespace GenericProblem
             {
                 return third;
             }
-            return "0";
+            return default;
         }
         /*public float floatCompare(float first, float second, float third)
         {
