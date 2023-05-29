@@ -6,8 +6,8 @@ namespace GenericProblem
     {
         static void Main(string[] args)
         {
-            TestClass test = new TestClass();
-            int result=test.Compareall<int>(2,1,3);
+            TestClass<string> test = new TestClass<string>("3","4","2");
+            string result=test.Compare("3", "4", "2");
             Console.WriteLine(result);
         }
     }
