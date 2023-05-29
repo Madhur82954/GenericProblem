@@ -7,7 +7,7 @@ namespace GenericProblem
         static void Main(string[] args)
         {
             TestClass test = new TestClass();
-            int result=test.IntCompare(2,1,3);
+            float result=test.floatCompare(1.1f,2.1f,3.3f);
             Console.WriteLine(result);
         }
     }
