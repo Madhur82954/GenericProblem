@@ -7,7 +7,7 @@ namespace GenericProblem
         static void Main(string[] args)
         {
             TestClass test = new TestClass();
-            string result=test.StringCompare("1","2","3");
+            string result=test.StringCompare("3","2","1");
             Console.WriteLine(result);
         }
     }
