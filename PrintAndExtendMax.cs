@@ -4,19 +4,19 @@ using System.Text;
 
 namespace GenericProblem
 {
-    internal class ExtendMaxMethod
+    internal class PrintAndExtendMax
     {
-        /*static void Main(string[] args)
+        static void Main(string[] args)
         {
             int maxInt = FindMaximum(10, 5, 8, 15, 3); // Test Case 1
-            Console.WriteLine("Max Number : "+maxInt);
+            Console.WriteLine("Max Number : " + maxInt);
 
             float maxFloat = FindMaximum(3.2f, 12.9f, 6.7f, 8.4f); // Test Case 2
-            Console.WriteLine("Max Number : "+maxFloat);
+            Console.WriteLine("Max Number : " + maxFloat);
 
             string maxString = FindMaximum("Apple", "Peach", "Banana", "Mango"); // Test Case 3
-            Console.WriteLine("Max String : "+maxString);
-        }*/
+            Console.WriteLine("Max String : " + maxString);
+        }
 
         static T FindMaximum<T>(params T[] values) where T : IComparable<T>
         {
@@ -32,6 +32,10 @@ namespace GenericProblem
             }
 
             return max;
+        }
+        static void PrintMax<T>(T Max)
+        {
+            Console.WriteLine("Max Value is"+Max);
         }
     }
 }
