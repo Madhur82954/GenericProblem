@@ -14,19 +14,19 @@ namespace GenericProblem
             this.SecondValue = secondvalue;
             this.ThirdValue = thirdvalue;
         }
-        public T Compare(T firstvalue,T secondvalue,T thirdvalue)
+        public T Compare()
         {
-            if (firstvalue.CompareTo(secondvalue) > 0 && firstvalue.CompareTo(thirdvalue) > 0)
+            if (FirstValue.CompareTo(SecondValue) > 0 && FirstValue.CompareTo(ThirdValue) > 0)
             {
-                return firstvalue;
+                return FirstValue;
             }
-            if (secondvalue.CompareTo(firstvalue) > 0 && secondvalue.CompareTo(thirdvalue) > 0)
+            if (SecondValue.CompareTo(FirstValue) > 0 && SecondValue.CompareTo(ThirdValue) > 0)
             {
-                return secondvalue;
+                return SecondValue;
             }
-            if (thirdvalue.CompareTo(firstvalue) > 0 && thirdvalue.CompareTo(secondvalue) > 0)
+            if (ThirdValue.CompareTo(FirstValue) > 0 && ThirdValue.CompareTo(SecondValue) > 0)
             {
-                return thirdvalue;
+                return ThirdValue;
             }
             return default;
         }
